@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="bower_components/components-font-awesome/css/font-awesome.min.css"/>
     
 
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -21,25 +23,47 @@
     </div>
     
     <div class="row">
-      <div class="small-6 columns">
+      <div class="medium-6 columns">
         <div class="screens">
           <div>
-            <img src="img/imsg_mock.png">
+            <img class="hero-image" src="img/imsg_iphone-mockup.png">
           </div>
           <div>
-            <img src="img/imsg_mock.png">
+            <img class="hero-image" src="img/imsg_iphone-mockup.png">
           </div>
           <div>
-            <img src="img/imsg_mock.png">
+            <img class="hero-image" src="img/imsg_iphone-mockup.png">
           </div>
         </div>
       </div>
-      <div class="small-6 columns">
-        <h2>Do your most important task every day</h2>.
-        <p class="lead">Get a text in the morning, respond with your most important task, and see it in your app and notification center all day. Track your most important tasks over time.</p>
-        <p class="lead">Coming soon...</p>
-        <a href="#" class="button round">Sign up for early access</a>
+      <div class="medium-6 columns landing-content">
+        <div class="panel">
+          <h2>Do your most important task every day</h2>
+          <p class="lead">Get a text in the morning, respond with your most important task, and see it in your app and notification center all day. Track your most important tasks over time.</p>
+          <p class="lead">Coming soon...</p>
+          <a href="#" data-reveal-id="signUpModal" class="button round">Sign up for early access</a>
+        </div>
       </div> 
+    </div>
+
+    <div id="signUpModal" class="reveal-modal" data-reveal>
+      <h2>Sign up for early access</h2>
+
+      <form>
+        <div class="row">
+            <div class="large-12 columns">
+              <div class="row collapse">
+                <div class="small-10 columns">
+                  <input type="text" placeholder="Your Email">
+                </div>
+                <div class="small-2 columns">
+                  <a href="#" class="button postfix"> <i class="fa fa-chevron-right"> </i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </form>
+      <a class="close-reveal-modal">&#215;</a>
     </div>
 
 
